@@ -26,7 +26,7 @@ public final class Constants {
         public static final double closedLoopRamp = 0.0;
 
         public static final double driveGearRatio = (6.75/ 1.0); //6.86:1
-        public static final double angleGearRatio = (150/7 / 1.0); //12.8:1
+        public static final double angleGearRatio = (150/7 / 1.0); //21.43
 
         public static final SwerveDriveKinematics swerveKinematics = new SwerveDriveKinematics(
                 new Translation2d(wheelBase / 2.0, trackWidth / 2.0),
@@ -41,7 +41,7 @@ public final class Constants {
         public static final boolean angleEnableCurrentLimit = true;
 
         public static final int driveContinuousCurrentLimit = 35;
-        public static final int drivePeakCurrentLimit = 80;
+        public static final int drivePeakCurrentLimit = 60;
         public static final double drivePeakCurrentDuration = 0.1;
         public static final boolean driveEnableCurrentLimit = true;
 
@@ -58,8 +58,8 @@ public final class Constants {
         public static final double driveKF = 0.0;
 
         /* Drive Motor Characterization Values */
-        public static final double driveKS = (0.667 / 12); //divide by 12 to convert from volts to percent output for CTRE
-        public static final double driveKV = (2.44 / 12);
+        public static final double driveKS = (0.32 / 12); //divide by 12 to convert from volts to percent output for CTRE
+        public static final double driveKV = (1.51 / 12);
         public static final double driveKA = (0.27 / 12);
 
         /* Swerve Profiling Values */
