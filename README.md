@@ -32,3 +32,12 @@ The following things must be adjusted to your robot and module's specific consta
 This code is natively setup to use a xbox controller to control the swerve driver. </br>
 The Left Stick controls translation (forwards and sideways movement), and the Right Stick controls rotation. </br>
 The Y button is mapped to zero the gyro, useful if the gyro drifts mid match, just rotate the robot forwards, and press Y to rezero.
+
+https://github.com/STMARobotics/swerve-test/blob/301928718c80cc6db3c29a6bfad8b36483baf1b4/src/main/java/frc/robot/commands/ChaseTagCommand.java
+https://github.com/FRCTeam834/Offseason-2022/tree/master/src/main/java/frc/robot
+https://docs.google.com/document/d/1uQ992ursn1nzvreEl5DJQcbwoV_wYsm6inpkA1r8KVY/edit#
+https://www.chiefdelphi.com/t/using-ros-for-inspiration-in-frc/411561
+https://github.com/FRC3476/AutoBuilder/wiki/Building-and-Downloading-this-project
+https://github.com/FRC3476/AutoBuilder/wiki
+https://github.com/CrossTheRoadElec/Phoenix-Examples-Languages/tree/master/Java%20General/CANdle
+https://store.ctr-electronics.com/content/api/java/html/classcom_1_1ctre_1_1phoenix_1_1led_1_1_c_a_ndle.html
