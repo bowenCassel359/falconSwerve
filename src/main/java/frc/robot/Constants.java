@@ -13,7 +13,7 @@ public final class Constants {
 
     public static final class Swerve {
         public static final int pigeonID = 0;
-        public static final boolean invertGyro = false; // Always ensure Gyro is CCW+ CW- #TODO check gyro direction 
+        public static final boolean invertGyro = true; // Always ensure Gyro is CCW+ CW- #TODO check gyro direction 
 
         /* Drivetrain Constants */
         //#FIXME update track with
@@ -46,9 +46,9 @@ public final class Constants {
         public static final boolean driveEnableCurrentLimit = true;
 
         /* Angle Motor PID Values */
-        public static final double angleKP = 0.3;
+        public static final double angleKP = 0.4;
         public static final double angleKI = 0.0;
-        public static final double angleKD = 10; //#TODO was 12
+        public static final double angleKD = 0; //#TODO was 12
         public static final double angleKF = 0.0;
 
         /* Drive Motor PID Values */
@@ -71,8 +71,8 @@ public final class Constants {
         public static final NeutralMode driveNeutralMode = NeutralMode.Brake;
 
         /* Motor Inverts */
-        public static final boolean driveMotorInvert = false;
-        public static final boolean angleMotorInvert = true;
+        public static final boolean driveMotorInvert = true;
+        public static final boolean angleMotorInvert = false;
 
         /* Angle Encoder Invert */
         public static final boolean canCoderInvert = true;
@@ -84,42 +84,42 @@ public final class Constants {
          *         2  3
          */
 
-        /* Front Left Module - Module 0 */
-        public static final class Mod0 {
+        /* Front Right Module - Module 1 */
+        public static final class Mod1 {
             public static final int driveMotorID = 8;
             public static final int angleMotorID = 9;
             public static final int canCoderID = 0;
-            public static final double angleOffset = 183.25;
+            public static final double angleOffset = 183.42;
             public static final SwerveModuleConstants constants = 
                 new SwerveModuleConstants(driveMotorID, angleMotorID, canCoderID, angleOffset);
         }
 
-        /* Front Right Module - Module 1 */
-        public static final class Mod1 {
+        /* Front Left Module - Module 0 */
+        public static final class Mod0 {
             public static final int driveMotorID = 6;
             public static final int angleMotorID = 7;
             public static final int canCoderID = 4;
-            public static final double angleOffset = 96.76;
+            public static final double angleOffset = 96.59;
             public static final SwerveModuleConstants constants = 
                 new SwerveModuleConstants(driveMotorID, angleMotorID, canCoderID, angleOffset);
         }
         
-        /* Back Left Module - Module 2 */
-        public static final class Mod2 {
+        /* Back Right Module - Module 3 */
+        public static final class Mod3 {
             public static final int driveMotorID = 14;
             public static final int angleMotorID = 15;
             public static final int canCoderID = 2;
-            public static final double angleOffset = 123.83;
+            public static final double angleOffset = 122.78;
             public static final SwerveModuleConstants constants = 
                 new SwerveModuleConstants(driveMotorID, angleMotorID, canCoderID, angleOffset);
         }
 
-        /* Back Right Module - Module 3 */
-        public static final class Mod3 {
+        /* Back Left Module - Module 2 */
+        public static final class Mod2 {
             public static final int driveMotorID = 0;
             public static final int angleMotorID = 1;
             public static final int canCoderID = 1;
-            public static final double angleOffset = 271.49;
+            public static final double angleOffset = 271.58;
             public static final SwerveModuleConstants constants = 
                 new SwerveModuleConstants(driveMotorID, angleMotorID, canCoderID, angleOffset);
         }
